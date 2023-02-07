@@ -3,13 +3,6 @@ def conver(grams):
 
 print(conver(int(input())))
 
-def solve(numheads,numlegs):
-    b = (numlegs - numheads * 2) // 2
-    a = 35 - b;
-    return a , b;
-
-print(solve(35,94))
-
 def calc(F):
     return (5 / 9) * (F - 32)
 
@@ -91,3 +84,54 @@ print(spy_game([1,2,4,0,0,7,5]))
 print(spy_game([1,0,2,4,0,5,7]))
 
 print(spy_game([1,7,2,0,4,5,0]))
+
+import math
+
+def comp(a):
+    return (4*math.pi*(a**3))/3
+
+print(comp(5))
+
+def uni(x):
+    y = [x[0],]
+    for i range(0,len(x)):
+        if
+
+x = uni([3,3,3,4,1,3,7,8,1,9,3,3,4,5,0,4,10])
+print(x)
+
+def palind(s):
+    size = int(len(s)/2)
+    for i in range(0,size):
+        if(s[i]!=s[len(s)-i-1]):
+            return False
+    return True
+
+x = input()
+print(palind(x))
+
+def histo(x):
+    for i in range(0,len(x)):
+        for j in range(0,x[i]):
+            print('*', end="")
+        print()
+
+histo([5,6,3])
+import random
+x = True
+name = input("Hello what is your name?")
+print(f"Well, {name}, I am thinking of a number between 1 and 20.")
+y = random.randint(1,20)
+cnt = 0;
+while x:
+    num = int(input())
+    cnt += 1
+    if(num > y):
+        print("Your guess is to big")
+        print("Take a guess")
+    elif(num < y):
+        print("Your guess is to low")
+        print("Take a guess")
+    else:
+        print(f"Good job, KBTU! You guessed my number in {cnt} guesses!")
+    
