@@ -134,4 +134,4 @@ while x:
         print("Take a guess")
     else:
         print(f"Good job, KBTU! You guessed my number in {cnt} guesses!")
-    
+        x = False

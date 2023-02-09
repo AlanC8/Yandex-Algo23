@@ -95,7 +95,7 @@ print(send_good_films(movies))
 
 def send_good_films(movies):
     for i in range(len(movies)):
-        if(movies[i]['imdb'] < 5.5):
+        if(movies[i]['imdb'] > 10 and movies[i]['imdb'] < 15):
             print(movies[i]["name"])
 
 print(send_good_films(movies))
