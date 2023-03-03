@@ -1,19 +1,16 @@
 import math
-# 1
-# x = round(math.radians(int(input("Input degree: "))), 6)
-# print(f"Output radian: {x}")
-
-# 2
-
-# def area(height, base1, base2):
-#     return (height * base1 + height * base2) / 2
+x = round(math.radians(int(input("Input degree: "))), 6)
+print(f"Output radian: {x}")
 
 
-# a = area(int(input("Height: ")), int(input("Base, first value: ")),
-#          int(input("Base, second value: ")))
-# print(f"Expected Output: {a}")
+def area(height, base1, base2):
+    return (height * base1 + height * base2) / 2
 
-# 3
+
+a = area(int(input("Height: ")), int(input("Base, first value: ")),
+         int(input("Base, second value: ")))
+print(f"Expected Output: {a}")
+
 side = int(input("Input number of sides: "))
 length = int(input("Input the length of a side: "))
 
@@ -31,14 +28,13 @@ if (side == 4):
     print(f"The area of the polygon is: {length ** 2}")
 else:
     print(f"The area of the polygon is: {polygon_area(side, length)}")
-# 4
 
 
-# def parallelogram_area(base, height):
-#     return base * height
+def parallelogram_area(base, height):
+    return base * height
 
 
-# area_parallelogram = parallelogram_area(
-#     int(input("Length of base: ")), int(input("Height of parallelogram: ")))
+area_parallelogram = parallelogram_area(
+    int(input("Length of base: ")), int(input("Height of parallelogram: ")))
 
-# print(f"Expected Output: {area_parallelogram}")
+print(f"Expected Output: {area_parallelogram}")

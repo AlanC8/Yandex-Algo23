@@ -1,18 +1,13 @@
 import datetime
-# 1
-# x = datetime.datetime.now()
-# y = datetime.datetime(x.year, x.month, x.day - 5)
-# print(y.strftime("%x"))
+x = datetime.datetime.now()
+y = datetime.datetime(x.year, x.month, x.day - 5)
+print(y.strftime("%x"))
 
-# 2
-# x1 = datetime.datetime.now()
-# print(x1.day - 1, x1.day, x1.day + 1)
+x1 = datetime.datetime.now()
+print(x1.day - 1, x1.day, x1.day + 1)
 
-# 3
-# x2 = datetime.datetime.today().replace(microsecond=0)
-# print(x2)
-
-# 4
+x2 = datetime.datetime.today().replace(microsecond=0)
+print(x2)
 
 x3 = datetime.datetime.now()
 year = int(input())
