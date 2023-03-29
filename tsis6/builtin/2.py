@@ -1,6 +1,6 @@
 def cnter(s):
-    a = len(list(filter(lambda u: u.isupper(), s)))
+    a = len(list(filter(lambda u: u.isdigit(), s)))
     return a, len(s)-a
 
 
-print(cnter("SfafaS"))
+print(cnter("Sfafa5"))
